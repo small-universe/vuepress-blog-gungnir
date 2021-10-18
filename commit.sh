@@ -8,5 +8,6 @@ set -e
 git add .
 git commit -m '提交了源码'
 git push origin master
-echo>提交源码到github结束
+
+#提交源码到github结束
 
