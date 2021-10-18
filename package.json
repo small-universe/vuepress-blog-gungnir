@@ -5,7 +5,9 @@
   "author": "nanci",
   "license": "MIT",
   "devDependencies": {
+    "@mr-hope/vuepress-plugin-comment": "^1.20.3",
     "vuepress": "^1.8.2",
+    "vuepress-plugin-photo-swipe": "^1.20.3",
     "vuepress-theme-gungnir": "^0.2.1"
   },
   "scripts": {

@@ -25,7 +25,7 @@ module.exports = {
     },
     search: true,  // 可选：是否启用搜索，默认：true
     searchMaxSuggestions: 10,  // 可选：搜索的最大结果数，默认：10
-    searchPlaceholder: "搜索...",  // 可选：搜索栏占位文本，默认："$ grep ..."
+    searchPlaceholder: "search ...",  // 可选：搜索栏占位文本，默认："$ grep ..."
     searchIcon: "ri-search-2-line", // 可选：搜索图标
     
     codeTheme: "gungnir-dark",
@@ -34,16 +34,16 @@ module.exports = {
       copyright: "nanci 2021-present",
       count: 20
     },
-    comment: {
+    // comment: {
       // owner: "This-is-an-Apple",
       // repo: "gitalk-comments",
       // clientId: "d6247712dc288a5a60ca",
       // clientSecret: "ed1ec72417828343c79ed910a1b77d140fa715a7"
-    },
-    analytics: {
+    // },
+    // analytics: {
       // ga: "UA-146858305-1",
       // ba: "75381d210789d3eaf855fa16246860cc"
-    },
+    // },
     
     katex: true, // 数学公式渲染
 
@@ -60,11 +60,11 @@ module.exports = {
         link: "/",
         icon: "fa-fort-awesome"
       },
-      {
-        text: "关于",
-        link: "/about/",
-        icon: "fa-paw"
-      },
+      // {
+      //   text: "关于",
+      //   link: "/about/",
+      //   icon: "fa-paw"
+      // },
       {
         text: "标签",
         link: "/tags/",
@@ -150,5 +150,14 @@ module.exports = {
       }
     };
     
-  }
+  },
+  plugins: [
+    ["photo-swipe"], //让页面图像支持预览，缩放，共享，滑动查看和下载
+    [
+      "@mr-hope/comment",
+      {
+        serverURL:"https://blog-comments-d5ek39wvg-small-universe.vercel.app/"
+      },
+    ],
+  ]
 };
