@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  
   title: "PhoenixBlog",
   description: "A blog powered by VuePress, themed by Gungnir.",
   head: [
@@ -141,6 +142,15 @@ module.exports = {
     // lineNumbers: true,
     extractHeaders: ["h2", "h3", "h4", "h5"]
   },
+  /**
+   * 使用插件
+   */
+   plugins: [
+    [
+      '@renovamen/vuepress-plugin-mermaid'
+    ],
+  ],
+  
   configureWebpack: () => {
     return {
       resolve: {
@@ -151,13 +161,5 @@ module.exports = {
     };
     
   },
-  plugins: [
-    ["photo-swipe"], //让页面图像支持预览，缩放，共享，滑动查看和下载
-    [
-      "@mr-hope/comment",
-      {
-        serverURL:"https://blog-comments-d5ek39wvg-small-universe.vercel.app/"
-      },
-    ],
-  ]
+  
 };
