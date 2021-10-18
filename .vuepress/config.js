@@ -88,34 +88,24 @@ module.exports = {
       }
     },
     homeHeaderImages: {
+      // 如果不配置 homeHeaderImages.local 项，则主题会在首页上显示通过 Unsplash API 随机拉取的一张壁纸，
+
+      // 可选：自定义 Unsplash 接口
+      api: "https://source.unsplash.com/1600x900/?wallpaper"
+
       // 可选：首页本地封面图路径和蒙版
-      local: [
-        {
-          path: "/img/home-bg/1.jpg",
-          mask: "rgba(40, 57, 101, .4)"
-        },
-        {
-          path: "/img/home-bg/2.jpg",
-          mask: "rgba(196, 176, 131, .1)"
-        },
-        {
-          path: "/img/home-bg/3.jpg",
-          mask: "rgba(68, 74, 83, .1)"
-        },
-        {
-          path: "/img/home-bg/4.jpg",
-          mask: "rgba(19, 75, 50, .2)"
-        },
-        {
-          path: "/img/home-bg/5.jpg"
-        }
-      ]
+      // local: [
+      //   {
+      //     path: "/img/home-bg/1.jpg",
+      //     mask: "rgba(40, 57, 101, .4)"
+      //   },
+      // ]
     },
     pages: {
       // 标签页配置
       tags: {
         // 可选：标签页标题
-        title: "",
+        title: " ",
 
         // 可选：标签页副标题
         subtitle: "",
@@ -128,7 +118,7 @@ module.exports = {
       },
       // 链接页配置
       links: {
-        title: "",
+        title: " ",
         // 可选：链接页副标题
         subtitle:
           "When you are looking at the stars, please put the brightest star shining night sky as my soul.",
