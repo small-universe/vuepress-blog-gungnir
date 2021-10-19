@@ -41,10 +41,10 @@ module.exports = {
       clientId: process.env.COMMENT_CLIENT_ID,
       clientSecret: process.env.COMMENT_CLIENT_SECRET
     },
-    // analytics: {
-      // ga: "UA-146858305-1",
-      // ba: "75381d210789d3eaf855fa16246860cc"
-    // },
+    analytics: {
+      ga: "",
+      ba: "04a475117fc68857f05c7f6d0e994ec2"
+    },
     
     katex: true, // 数学公式渲染
 
