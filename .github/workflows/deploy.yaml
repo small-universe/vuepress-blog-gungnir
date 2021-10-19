@@ -38,6 +38,9 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn build
+        env:
+          COMMENT_CLIENT_ID: ${{ secrets.COMMENT_CLIENT_ID }} # 评论系统的ID
+          COMMENT_CLIENT_SECRET: ${{ secrets.COMMENT_CLIENT_SECRET }} # 评论系统的KEY
 
       # Push it to gh-pahes
       - name: Deploy

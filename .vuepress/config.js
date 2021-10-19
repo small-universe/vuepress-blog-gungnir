@@ -35,12 +35,12 @@ module.exports = {
       copyright: "nanci 2021-present",
       count: 20
     },
-    // comment: {
-      // owner: "This-is-an-Apple",
-      // repo: "gitalk-comments",
-      // clientId: "d6247712dc288a5a60ca",
-      // clientSecret: "ed1ec72417828343c79ed910a1b77d140fa715a7"
-    // },
+    comment: {
+      owner: "small-universe",
+      repo: "gungnir-comments",
+      clientId: process.env.COMMENT_CLIENT_ID,
+      clientSecret: process.env.COMMENT_CLIENT_SECRET
+    },
     // analytics: {
       // ga: "UA-146858305-1",
       // ba: "75381d210789d3eaf855fa16246860cc"
