@@ -146,20 +146,15 @@ module.exports = {
    * 使用插件
    */
    plugins: [
-    [
-      '@renovamen/vuepress-plugin-mermaid'
-    ],
-  ],
-  
-  configureWebpack: () => {
-    return {
-      resolve: {
-        alias: {
-          public: path.resolve(__dirname, "./public")
-        }
+    ['@vuepress/medium-zoom',{
+      selector: 'img.zoom-custom-imgs',
+      // medium-zoom options here
+      // See: https://github.com/francoischalifour/medium-zoom#options
+      options: {
+        margin: 16
       }
-    };
-    
-  },
+    }
+  ]
+  ],
   
 };
