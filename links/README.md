@@ -13,7 +13,7 @@ links:
       - sitename: Gungnir
         url: https://vuepress-theme-gungnir.vercel.app/zh/docs/
         img: /img/links/gungnir.svg
-        desc: ⭐⭐⭐
+        desc: ⭐⭐⭐⭐⭐
       - sitename: Hope
         url: https://vuepress-theme-hope.github.io/zh/
         img: /img/links/hope.svg
