@@ -132,7 +132,7 @@ module.exports = {
     },
     // 页脚自定义   支持 HTML 格式
     footer: `
-      &copy; <a href="https://github.com/small-universe" target="_blank">nanci</a> 2018-2021
+      &copy; <a href="https://github.com/small-universe" target="_blank">nanci</a> 2021-present
       <br>
       Powered by <a href="https://vuepress.vuejs.org" target="_blank">VuePress 1.x</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
