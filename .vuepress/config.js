@@ -5,7 +5,7 @@ module.exports = {
   title: "PhoenixBlog",
   description: "A blog powered by VuePress, themed by Gungnir.",
   head: [
-    ["link", { rel: "icon", href: "/img/logo.svg" }],
+    ["link", { rel: "icon", href: "/img/favicon.png" }],
     [
       "meta",
       {
