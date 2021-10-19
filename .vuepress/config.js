@@ -42,8 +42,8 @@ module.exports = {
       clientSecret: process.env.COMMENT_CLIENT_SECRET
     },
     analytics: {
-      ga: "",
-      ba: "04a475117fc68857f05c7f6d0e994ec2"
+      // ga: "", //谷歌统计
+      ba: "04a475117fc68857f05c7f6d0e994ec2" // 百度统计
     },
     
     katex: true, // 数学公式渲染
