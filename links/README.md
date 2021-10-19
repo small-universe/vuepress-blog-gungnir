@@ -27,7 +27,7 @@ links:
         img: /img/links/vdoing.png
         desc: ⭐⭐⭐⭐
       - sitename: yur
-        url: https://blog.cnguu.cn/
+        url: https://github.com/cnguu/vuepress-theme-yur/
         img: /img/links/yur.png
         desc: ⭐⭐⭐
 ---
