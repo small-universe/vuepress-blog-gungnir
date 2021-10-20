@@ -2,8 +2,12 @@
 layout: Links
 title: Links
 links:
-  - title: 组件
+  - title: 组件库
     items:
+      - sitename: Vuetify
+        url: https://vuetifyjs.com/zh-Hans/
+        img: /img/links/vuetify.png
+        desc: Material 样式的 Vue UI 组件
       - sitename: Oh, Vue Icons!
         url: https://oh-vue-icons.netlify.app
         img: /img/links/icon.svg

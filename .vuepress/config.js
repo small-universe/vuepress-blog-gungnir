@@ -61,15 +61,16 @@ module.exports = {
         link: "/",
         icon: "fa-fort-awesome"
       },
-      // {
-      //   text: "关于",
-      //   link: "/about/",
-      //   icon: "fa-paw"
-      // },
+      
       {
         text: "标签",
         link: "/tags/",
         icon: "fa-tag"
+      },
+      {
+        text: "书舍",
+        link: "/read/",
+        icon: "ri-book-2-fill"
       },
       {
         text: "链接",
@@ -126,6 +127,13 @@ module.exports = {
         // 可选：链接页封面图路径和蒙版
         bgImage: {
           path: "/img/pages/links.jpg",
+          mask: "rgba(64, 118, 190, 0.5)"
+        }
+      },
+      read: {
+        title: "阅读",
+        bgImage: {
+          path: "/img/pages/read.jpeg",
           mask: "rgba(64, 118, 190, 0.5)"
         }
       }
