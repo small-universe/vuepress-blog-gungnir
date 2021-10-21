@@ -1,76 +1,69 @@
 <template>
-<div>
-  <v-btn
-  elevation="2"
-  loading
-></v-btn>
-  {{books}}
-</div>
-  <!-- <a-row :gutter="[30, 30]">
-    <template v-if="dataSource.length > 0">
-      
-      <a-col
-        v-for="book in dataSource"
-        :key="book.key"
-        :xs="{ span: 24 }"
-        :sm="{ span: 12 }"
-        :md="{ span: 12 }"
-        :lg="{ span: 8 }"
-        :xl="{ span: 6 }"
-        :xxl="{ span: 6 }"
-      >
-        <router-link :to="book.path">
-          <a-card class="yur-card" :bordered="false" size="small">
-            <div
-              slot="cover"
-              class="background-image"
-              :style="{
-                height: '140px',
-                backgroundImage: `url(${book.banner})`
-              }"
-            />
-            <a-card-meta :title="book.title" />
-          </a-card>
-        </router-link>
-      </a-col>
-      <a-col class="yur-pagination" :span="24">
-        <pagination
-          :current="current"
-          :page-size="pageSize"
-          :total="sPosts.length"
-          @change="onChangePagination"
-        />
-      </a-col>
-    </template>
-    <template v-else>
-      <a-empty />
-    </template>
-  </a-row> -->
+  <Common class="read">
+    <PageHeader :page-info="getPageInfo" />
+    <v-container>
+      <v-row class="fill-height" align="center" justify="center">
+        <v-icon large color="green darken-2">mdi-domain</v-icon>
+        <template v-for="(item, i) in bookList">
+          <v-col :key="i" cols="12" md="4">
+            <v-hover>
+              <v-card class="mx-auto" max-width="450">
+                <v-img :src="item.cover" aspect-ratio="1.7" position="top center" />
+                <v-card-title>
+                  <div class="text-h4 mb-2">{{ item.title }}</div>
+                </v-card-title>
+                <v-divider class="mt-6 mx-4"></v-divider>
+
+                <v-card-text>
+                  <v-chip class="mr-2" close-icon="mdi-delete" color="blue" link outlined>
+                    <v-icon name="ri-book-2-fill" />PDF
+                  </v-chip>
+                  <v-chip class="mr-2" color="success" outlined @click="link()">
+                    <v-icon name="ri-book-2-fill" />链接
+                  </v-chip>
+                  <v-chip class="mr-3" color="green" outlined>
+                    <v-icon name="ri-book-2-fill" />读书笔记
+                  </v-chip>
+                </v-card-text>
+              </v-card>
+            </v-hover>
+          </v-col>
+        </template>
+      </v-row>
+    </v-container>
+  </Common>
 </template>
 
 <script>
-import Common from "@theme/components/Common.vue";
-import Pagination from "./Pagination";
+import Common from "@theme/components/Common";
+import PageHeader from "@theme/components/PageHeader";
 
 
 export default {
   name: "Read",
-  components: { Pagination, Common },
-  
+  components: { Common, PageHeader },
+
   data() {
     const pageSize = 24;
     return {
       sPosts: null,
       current: 1,
       pageSize: 10,
-      books: null,
-      dataSource:null
+      bookList: [],
+      dataSource: null
     };
   },
-  created(){
-    this.books = this.$page.frontmatter.books
-    this.sPosts = this.books
-    this. dataSource=[...this.books].splice(0, this.pageSize)
+  computed: {
+    getPageInfo() {
+      let info =
+        this.$themeConfig.pages && this.$themeConfig.pages.reading
+          ? this.$themeConfig.pages.reading
+          : {};
+      return info;
+    }
+  },
+  created() {
+    this.bookList = this.initBookList()
   },
   watch: {
     posts(nv) {
@@ -80,6 +73,24 @@ export default {
     }
   },
   methods: {
+    initBookList() {
+      const categories = this.$page.frontmatter.categories;
+      let bookList = [];
+      for (let i in categories) {
+        let item = categories[i];
+        let categoryName = item.category;
+        let books = item.books;
+        for (let j in books) {
+          let book = books[j]
+          book.category = categoryName
+          bookList.push(book)
+        }
+      }
+      console.log(bookList)
+      return bookList
+      // this.dataSource = [...this.books].splice(0, this.pageSize)
+    },
+
     onChangePagination(page) {
       this.current = page;
       this.dataSource = this.splitPosts();
@@ -94,3 +105,9 @@ export default {
   }
 };
 </script>
+<style lang="stylus">
+@require "../styles/mixins.styl"
+
+
+</style>
+<style src="@theme/styles/theme.styl" lang="stylus"></style>

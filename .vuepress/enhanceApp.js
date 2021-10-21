@@ -40,8 +40,15 @@ OhVueIcon.add(
   RiBook2Fill 
 );
 
-import Vue from 'vue'
-import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
-Vue.use(Vuetify)
+import Vue from 'vue'
+import vuetify from './plugins/vuetify' // path to vuetify export
+export default ({
+  Vue,      // VuePress 应用正在使用的Vue版本
+  options,  // 根Vue实例的选项
+  router,   // 应用的路由实例
+  siteData,  // 站点元数据
+}) => {
+  Vue.use(vuetify)
+}
