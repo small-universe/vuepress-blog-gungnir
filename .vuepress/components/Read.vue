@@ -6,7 +6,7 @@
         <v-icon large color="green darken-2">mdi-domain</v-icon>
         <template v-for="(item, i) in bookList">
           <v-col :key="i" cols="12" md="4">
-            <v-hover>
+            <v-hover value=true>
               <v-card class="mx-auto" max-width="450">
                 <v-img :src="item.cover" aspect-ratio="1.7" position="top center" />
                 <v-card-title>
@@ -105,9 +105,12 @@ export default {
   }
 };
 </script>
-<style lang="stylus">
+
+<style lang="stylus" scoped>
 @require "../styles/mixins.styl"
-
-
+.v-card.on-hover.theme--dark
+  background-color: rgba(#FFF, 0.8)
+  >.v-card__text
+    color: #000
 </style>
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
