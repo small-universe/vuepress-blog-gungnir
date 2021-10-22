@@ -155,9 +155,6 @@ module.exports = {
    * 使用插件
    */
    plugins: [
-    [
-      'vuepress-plugin-chart'
-    ]
   ],
   
 };

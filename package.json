@@ -12,11 +12,9 @@
     "deploy": "deploy.sh"
   },
   "dependencies": {
-    "@renovamen/vuepress-plugin-mermaid": "^0.2.0",
     "async-validator": "^1.11.5",
     "element-ui": "^2.15.6",
     "vuepress": "^1.8.2",
-    "vuepress-plugin-chart": "^0.3.0",
     "vuepress-theme-gungnir": "^0.2.1",
     "vuetify": "^2.5.10"
   }

@@ -49,14 +49,8 @@ export default {
   components: { Common, PageHeader },
 
   data() {
-    const pageSize = 24;
     return {
-      currentDate: new Date(),
-      sPosts: null,
-      current: 1,
-      pageSize: 10,
       bookList: [],
-      dataSource: null
     };
   },
   computed: {
@@ -70,13 +64,6 @@ export default {
   },
   created() {
     this.bookList = this.initBookList()
-  },
-  watch: {
-    posts(nv) {
-      this.sPosts = nv;
-      this.current = 1;
-      this.onChangePagination(this.current);
-    }
   },
   methods: {
     initBookList() {
@@ -92,39 +79,23 @@ export default {
           bookList.push(book)
         }
       }
-      console.log(bookList)
       return bookList
-      // this.dataSource = [...this.books].splice(0, this.pageSize)
     },
-
-    onChangePagination(page) {
-      this.current = page;
-      this.dataSource = this.splitPosts();
-    },
-    splitPosts() {
-      let posts = [...this.sPosts];
-      if (posts.length > (this.current - 1) * this.pageSize) {
-        posts = posts.splice((this.current - 1) * this.pageSize, this.pageSize);
-      }
-      return posts;
-    }
-  }
+  },
 };
 </script>
-
-<style src="@theme/styles/theme.styl" lang="stylus"></style>
-
-<style lang="stylus" scoped>
-@require "../styles/mixins.styl"
-.container
-  padding 10px 0 50px
-  width 80%
-  max-width 90%
-  margin 0 auto
- .el-col {
-    border-radius: 4px;
-    padding: 10px;
-  }
+<style scoped>
+.container{
+  padding: 10px 0 50px;
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+  
+.el-col {
+  border-radius: 4px;
+  padding: 10px;
+}
 .box-card{
   width: 325px;
 }
@@ -157,5 +128,10 @@ export default {
 .clearfix:after {
   clear: both;
 }
+</style>
+<style src="@theme/styles/theme.styl" lang="stylus"></style>
+
+<style lang="stylus" scoped>
+@require "../styles/mixins.styl"
 
 </style>
