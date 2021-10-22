@@ -5,22 +5,36 @@
       <el-row :gutter="10">
         <el-col :span="6" v-for="book in bookList" :key="book.key">
           <el-card shadow="hover">
-            <el-image
-              style="width: 100px; height: 100px"
-              :src="book.cover"
-              :preview-src-list="[book.cover]"
-            >
-              <div slot="error" class="image-slot">
-                <i class="el-icon-picture-outline"></i>
-              </div>
-            </el-image>
-            <div style="padding: 14px;">
-              <span>好吃的汉堡</span>
-              <div class="bottom clearfix">
-                <time class="time">{{ currentDate }}</time>
-                <el-button type="text" class="button">操作按钮</el-button>
-              </div>
-            </div>
+            <el-row :gutter="2">
+              <el-col :span="10">
+                <el-image
+                  style="width: 110px; height: 126px"
+                  :src="book.cover"
+                  :preview-src-list="[book.cover]"
+                >
+                  <div slot="error" class="image-slot">
+                    <i class="el-icon-picture-outline"></i>
+                  </div>
+                </el-image>
+              </el-col>
+              <el-col :span="14">
+                <h3>{{ book.title }}</h3>
+                <span>作者:{{ book.author }}</span>
+              </el-col>
+            </el-row>
+  
+            <el-divider />
+            <el-row :gutter="1">
+              <el-col :span="8">
+                <el-button type="primary" plain icon="el-icon-reading">PDF</el-button>
+              </el-col>
+              <el-col :span="8">
+                <el-button type="success" plain icon="el-icon-share">链接</el-button>
+              </el-col>
+              <el-col :span="8">
+                <el-button type="primary" plain icon="el-icon-magic-stick">笔记</el-button>
+              </el-col>
+            </el-row>
           </el-card>
         </el-col>
       </el-row>

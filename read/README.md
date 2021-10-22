@@ -41,8 +41,8 @@ categories:
   - category: 测试2
     books:
       - title: 测试2
-        cover: /img/in-post/header/header-0.jpg
-        pdf: /files/book/测试2.pdf
+        cover: 
+        pdf: 
         link:
         note:
 ---
