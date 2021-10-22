@@ -12,9 +12,6 @@
                   :src="book.cover"
                   :preview-src-list="[book.cover]"
                 >
-                  <div slot="error" class="image-slot">
-                    <i class="el-icon-picture-outline"></i>
-                  </div>
                 </el-image>
               </el-col>
               <el-col :span="14">

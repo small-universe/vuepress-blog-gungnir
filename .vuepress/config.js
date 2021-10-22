@@ -68,7 +68,7 @@ module.exports = {
         icon: "fa-tag"
       },
       {
-        text: "书舍",
+        text: "书屋",
         link: "/read/",
         icon: "ri-book-2-fill"
       },
