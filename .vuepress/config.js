@@ -144,7 +144,7 @@ module.exports = {
       &copy; <a href="https://github.com/small-universe" target="_blank">nanci</a> 2021-present
       <br>
       Powered by <a href="https://vuepress.vuejs.org" target="_blank"><b>VuePress 1.x</b></a> &
-      <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
+      <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank"><b>Gungnir</b></a>
     `
   },
   markdown: {
