@@ -155,15 +155,9 @@ module.exports = {
    * 使用插件
    */
    plugins: [
-    ['@vuepress/medium-zoom',{
-      selector: 'img.zoom-custom-imgs',
-      // medium-zoom options here
-      // See: https://github.com/francoischalifour/medium-zoom#options
-      options: {
-        margin: 16
-      }
-    }
-  ]
+    [
+      'vuepress-plugin-chart'
+    ]
   ],
   
 };
