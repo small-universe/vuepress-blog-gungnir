@@ -6,14 +6,6 @@ module.exports = {
   description: "A blog powered by VuePress, themed by Gungnir.",
   head: [
     ["link", { rel: "icon", href: "/img/favicon.png" }],
-    // ['link', {
-    //   rel: 'stylesheet',
-    //   href: `https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900`
-    // }],
-    // ['link', {
-    //   rel: 'stylesheet',
-    //   href: `https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css`
-    // }],
     [
       "meta",
       {

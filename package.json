@@ -13,13 +13,10 @@
   },
   "dependencies": {
     "@renovamen/vuepress-plugin-mermaid": "^0.2.0",
+    "async-validator": "^1.11.5",
+    "element-ui": "^2.15.6",
     "vuepress": "^1.8.2",
     "vuepress-theme-gungnir": "^0.2.1",
     "vuetify": "^2.5.10"
-  },
-  "devDependencies": {
-    "@mdi/font": "^6.3.95",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.2.0"
   }
 }

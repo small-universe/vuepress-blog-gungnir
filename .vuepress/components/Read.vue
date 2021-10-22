@@ -1,36 +1,30 @@
 <template>
   <Common class="read">
     <PageHeader :page-info="getPageInfo" />
-    <v-container>
-      <v-row class="fill-height" align="center" justify="center">
-        <v-icon large color="green darken-2">mdi-domain</v-icon>
-        <template v-for="(item, i) in bookList">
-          <v-col :key="i" cols="12" md="4">
-            <v-hover value=true>
-              <v-card class="mx-auto" max-width="450">
-                <v-img :src="item.cover" aspect-ratio="1.7" position="top center" />
-                <v-card-title>
-                  <div class="text-h4 mb-2">{{ item.title }}</div>
-                </v-card-title>
-                <v-divider class="mt-6 mx-4"></v-divider>
-
-                <v-card-text>
-                  <v-chip class="mr-2" close-icon="mdi-delete" color="blue" link outlined>
-                    <v-icon name="ri-book-2-fill" />PDF
-                  </v-chip>
-                  <v-chip class="mr-2" color="success" outlined @click="link()">
-                    <v-icon name="ri-book-2-fill" />链接
-                  </v-chip>
-                  <v-chip class="mr-3" color="green" outlined>
-                    <v-icon name="ri-book-2-fill" />读书笔记
-                  </v-chip>
-                </v-card-text>
-              </v-card>
-            </v-hover>
-          </v-col>
-        </template>
-      </v-row>
-    </v-container>
+    <div class="container">
+      <el-row :gutter="10">
+        <el-col :span="6" v-for="book in bookList" :key="book.key">
+          <el-card shadow="hover">
+            <el-image
+              style="width: 100px; height: 100px"
+              :src="book.cover"
+              :preview-src-list="[book.cover]"
+            >
+              <div slot="error" class="image-slot">
+                <i class="el-icon-picture-outline"></i>
+              </div>
+            </el-image>
+            <div style="padding: 14px;">
+              <span>好吃的汉堡</span>
+              <div class="bottom clearfix">
+                <time class="time">{{ currentDate }}</time>
+                <el-button type="text" class="button">操作按钮</el-button>
+              </div>
+            </div>
+          </el-card>
+        </el-col>
+      </el-row>
+    </div>
   </Common>
 </template>
 
@@ -46,6 +40,7 @@ export default {
   data() {
     const pageSize = 24;
     return {
+      currentDate: new Date(),
       sPosts: null,
       current: 1,
       pageSize: 10,
@@ -106,11 +101,50 @@ export default {
 };
 </script>
 
+<style src="@theme/styles/theme.styl" lang="stylus"></style>
+
 <style lang="stylus" scoped>
 @require "../styles/mixins.styl"
-.v-card.on-hover.theme--dark
-  background-color: rgba(#FFF, 0.8)
-  >.v-card__text
-    color: #000
+.container
+  padding 10px 0 50px
+  width 80%
+  max-width 90%
+  margin 0 auto
+ .el-col {
+    border-radius: 4px;
+    padding: 10px;
+  }
+.box-card{
+  width: 325px;
+}
+.time {
+  font-size: 13px;
+  color: #999;
+}
+
+.bottom {
+  margin-top: 13px;
+  line-height: 12px;
+}
+
+.button {
+  padding: 0;
+  float: right;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 </style>
-<style src="@theme/styles/theme.styl" lang="stylus"></style>

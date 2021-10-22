@@ -39,16 +39,19 @@ OhVueIcon.add(
   AiObpSquare,
   RiBook2Fill 
 );
-
-import 'vuetify/dist/vuetify.min.css'
+// import vuetify from './plugins/vuetify' // path to vuetify export
+// import 'vuetify/dist/vuetify.min.css'
 
 import Vue from 'vue'
-import vuetify from './plugins/vuetify' // path to vuetify export
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
 export default ({
   Vue,      // VuePress 应用正在使用的Vue版本
   options,  // 根Vue实例的选项
   router,   // 应用的路由实例
   siteData,  // 站点元数据
 }) => {
-  Vue.use(vuetify)
+  // Vue.use(vuetify)
+  Vue.use(ElementUI)
 }
