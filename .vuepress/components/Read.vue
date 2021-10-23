@@ -3,7 +3,7 @@
     <PageHeader :page-info="getPageInfo" />
     <div class="container">
       <el-row :gutter="10">
-        <el-col :span="6" v-for="book in bookList" :key="book.key">
+        <el-col class="book-card" v-for="book in bookList" :key="book.key">
           <el-card shadow="hover">
             <el-row :gutter="2">
               <el-col :span="12">
@@ -100,34 +100,11 @@ export default {
 .box-card{
   width: 325px;
 }
-.time {
-  font-size: 13px;
-  color: #999;
-}
+@media (max-width: $MQIpad)
+  .book-card
+    width: 100%
+  .el-card 
+    background-color: #ecf5ff;
 
-.bottom {
-  margin-top: 13px;
-  line-height: 12px;
-}
-
-.button {
-  padding: 0;
-  float: right;
-}
-
-.image {
-  width: 100%;
-  display: block;
-}
-
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-}
-
-.clearfix:after {
-  clear: both;
-}
 </style>
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
