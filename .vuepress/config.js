@@ -131,8 +131,8 @@ module.exports = {
         }
       },
       reading: {
-        title:"",
-        subtitle:"读万卷书 行万里路 ~",
+        title:"读万卷书 行万里路 ~",
+        subtitle:"",
         bgImage: {
           path: "/img/pages/read.svg",
           // mask: "rgba(211, 136, 37, .5)"
