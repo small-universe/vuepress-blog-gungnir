@@ -102,9 +102,9 @@ export default {
 }
 @media (max-width: $MQIpad)
   .book-card
-    width: 100%
+    width 100%
   .el-card 
-    background-color: #ecf5ff;
+    background-color #ecf5ff;
 
 </style>
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
