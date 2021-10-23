@@ -6,7 +6,7 @@
         <el-col :span="6" v-for="book in bookList" :key="book.key">
           <el-card shadow="hover">
             <el-row :gutter="2">
-              <el-col :span="10">
+              <el-col :span="12">
                 <el-image
                   style="width: 110px; height: 126px"
                   :src="book.cover"
@@ -14,22 +14,22 @@
                 >
                 </el-image>
               </el-col>
-              <el-col :span="14">
+              <el-col :span="12">
                 <h3>{{ book.title }}</h3>
                 <span>作者:{{ book.author }}</span>
               </el-col>
             </el-row>
   
             <el-divider />
-            <el-row :gutter="1">
+            <el-row :gutter="20">
               <el-col :span="8">
-                <el-button type="primary" plain icon="el-icon-reading">PDF</el-button>
+                <el-button type="primary" plain icon="el-icon-reading" size="small">PDF</el-button>
               </el-col>
               <el-col :span="8">
-                <el-button type="success" plain icon="el-icon-share">链接</el-button>
+                <el-button type="success" plain icon="el-icon-share" size="small">笔记</el-button>
               </el-col>
               <el-col :span="8">
-                <el-button type="primary" plain icon="el-icon-magic-stick">笔记</el-button>
+                <el-button type="primary" plain icon="el-icon-magic-stick" size="small">链接</el-button>
               </el-col>
             </el-row>
           </el-card>
