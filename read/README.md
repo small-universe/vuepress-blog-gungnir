@@ -29,20 +29,4 @@ categories:
         pdf: /files/books/代码整洁之道.pdf
         link:
         note:
-
-  - category: 测试1
-    books:
-      - title: 测试1
-        cover: /img/in-post/header/header-0.jpg
-        pdf: /files/book/测试2.pdf
-        link:
-        note:
-  
-  - category: 测试2
-    books:
-      - title: 测试2
-        cover: 
-        pdf: 
-        link:
-        note:
 ---

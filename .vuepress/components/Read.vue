@@ -84,7 +84,8 @@ export default {
   },
 };
 </script>
-<style scoped>
+<style lang="stylus" scoped>
+@require "../styles/mixins.styl"
 .container{
   padding: 10px 0 50px;
   width: 80%;
@@ -130,8 +131,3 @@ export default {
 }
 </style>
 <style src="@theme/styles/theme.styl" lang="stylus"></style>
-
-<style lang="stylus" scoped>
-@require "../styles/mixins.styl"
-
-</style>
