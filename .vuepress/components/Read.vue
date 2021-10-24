@@ -21,7 +21,7 @@
 
             <el-divider class="divider"/>
             <div class="card-foot">
-              <el-row :gutter="20">
+              <el-row>
                 <el-col :span="8">
                   <el-button type="primary" plain icon="el-icon-reading" size="small">PDF</el-button>
                 </el-col>
@@ -89,13 +89,16 @@ export default {
 @require '../styles/mixins.styl';
 @require '../styles/mode.styl';
 .read{
-  background: url(/img/pages/read.svg) no-repeat;
+  // background: url(/img/pages/read.svg) no-repeat;
+  // background-size:cover;  
+  // background-attachment: fixed;
 }
 .container {
   padding: 10px 0 50px;
   width: 80%;
   max-width: 90%;
   margin: 0 auto;
+  
 }
 .divider{
   height: 1.5px; 
