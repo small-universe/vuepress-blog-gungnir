@@ -120,7 +120,7 @@ export default {
   padding: 10px;
 }
 .col-button{
-  padding-left: 5px !important;
+  padding-left: 6px !important;
 }
 
 .box-card {
