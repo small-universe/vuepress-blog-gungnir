@@ -89,7 +89,7 @@ export default {
 @require '../styles/mixins.styl';
 @require '../styles/mode.styl';
 .read{
-  // background: url(/img/pages/read.svg) no-repeat;
+  // background: url(/img/pages/float.svg) no-repeat;
   // background-size:cover;  
   // background-attachment: fixed;
 }
