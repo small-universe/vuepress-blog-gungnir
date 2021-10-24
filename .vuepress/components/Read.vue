@@ -14,22 +14,29 @@
                 ></el-image>
               </el-col>
               <el-col :span="12">
-                <h3>{{ book.title }}</h3>
-                <span>作者:{{ book.author }}</span>
+                <h4>{{ book.title }}</h4>
+                <h5>{{ book.author }}</h5>
               </el-col>
             </el-row>
 
-            <el-divider class="divider"/>
+            <el-divider class="divider" />
             <div class="card-foot">
-              <el-row>
-                <el-col :span="8">
+              <el-row :gutter="2">
+                <el-col :span="8" class="col-button">
                   <el-button type="primary" plain icon="el-icon-reading" size="small">PDF</el-button>
                 </el-col>
-                <el-col :span="8">
+                <el-col :span="8" class="col-button">
                   <el-button type="success" plain icon="el-icon-share" size="small">笔记</el-button>
                 </el-col>
-                <el-col :span="8">
-                  <el-button type="primary" plain icon="el-icon-magic-stick" size="small">链接</el-button>
+                <el-col :span="8" class="col-button">
+                  <el-button
+                    type="primary"
+                    plain
+                    icon="el-icon-magic-stick"
+                    size="small"
+                    :disabled="book.link == null"
+                    @click="clickLink(book.link)"
+                  >链接</el-button>
                 </el-col>
               </el-row>
             </div>
@@ -82,6 +89,9 @@ export default {
       }
       return bookList
     },
+    clickLink(url) {
+      window.open(url)
+    }
   },
 };
 </script>
@@ -108,6 +118,9 @@ export default {
 .el-col {
   border-radius: 4px;
   padding: 10px;
+}
+.col-button{
+  padding-left: 5px !important;
 }
 
 .box-card {
