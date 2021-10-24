@@ -135,7 +135,7 @@ module.exports = {
         subtitle:" 行万里路 ~",
         bgImage: {
           path: "/img/pages/reading.jpg",
-          mask: "rgba(246,231,45, 0.3)"
+          mask: "rgba(64, 118, 190, 0.5)"
         }
       }
     },
