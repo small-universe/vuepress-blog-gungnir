@@ -12,6 +12,7 @@ links:
         url: https://oh-vue-icons.netlify.app
         img: /img/links/icon.svg
         desc: Vue 图标组件
+  
   - title: VuePress 主题
     items:
       - sitename: Gungnir
@@ -34,4 +35,11 @@ links:
         url: https://github.com/cnguu/vuepress-theme-yur/
         img: /img/links/yur.png
         desc: ⭐⭐⭐
+
+  - title: 资源推荐
+    items:
+      - sitename: IT Book
+        url: https://github.com/XiangLinPro/IT_book
+        img: /img/links/IT-book.png
+        desc: 程序员必修内功，上千本各类编程书籍
 ---
