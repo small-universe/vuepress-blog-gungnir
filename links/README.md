@@ -42,4 +42,9 @@ links:
         url: https://github.com/XiangLinPro/IT_book
         img: /img/links/IT-book.png
         desc: 程序员必修内功，上千本各类编程书籍
+
+      - sitename: Docker 从入门到实践
+        url: https://vuepress.mirror.docker-practice.com/
+        img: /img/links/docker-learning.png
+        desc: 入门 Docker 的好教程
 ---
