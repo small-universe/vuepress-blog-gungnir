@@ -46,5 +46,5 @@ links:
       - sitename: Docker 从入门到实践
         url: https://vuepress.mirror.docker-practice.com/
         img: /img/links/docker-learning.png
-        desc: 入门 Docker 的好教程
+        desc: Docker学习教程
 ---
