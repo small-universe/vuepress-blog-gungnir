@@ -43,8 +43,8 @@ links:
         img: /img/links/IT-book.png
         desc: 程序员必修内功，上千本各类编程书籍
 
-      - sitename: Docker 从入门到实践
+      - sitename: Docker 教程
         url: https://vuepress.mirror.docker-practice.com/
         img: /img/links/docker-learning.png
-        desc: Docker学习教程
+        desc: Docker 从入门到实践
 ---
