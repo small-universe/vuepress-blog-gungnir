@@ -59,4 +59,9 @@ links:
         url: https://lhammer.cn/You-need-to-know-css/#/zh-cn/
         img: /img/links/You-need-to-know-css.png
         desc: Web开发者应该掌握的CSS tricks
+
+      - sitename: CSS Tricks 
+        url: https://qishaoxuan.github.io/css_tricks/
+        img: /img/links/css-tricks.png
+        desc: 常用的 CSS 样式 | CSS 的新属性 | 一点CSS奇技淫巧
 ---
