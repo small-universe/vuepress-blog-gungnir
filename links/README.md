@@ -11,7 +11,7 @@ links:
       - sitename: Oh, Vue Icons!
         url: https://oh-vue-icons.netlify.app
         img: /img/links/icon.svg
-        desc: Vue 图标组件
+        desc: Vue 图标组件           
   
   - title: VuePress 主题
     items:
@@ -36,7 +36,7 @@ links:
         img: /img/links/yur.png
         desc: ⭐⭐⭐
 
-  - title: 资源推荐
+  - title: 后端学习资料
     items:
       - sitename: IT Book
         url: https://github.com/XiangLinPro/IT_book
@@ -46,5 +46,17 @@ links:
       - sitename: Docker 教程
         url: https://vuepress.mirror.docker-practice.com/
         img: /img/links/docker-learning.png
-        desc: Docker 从入门到实践
+        desc: Docker 从入门到实践            
+  
+  - title: 前端学习资料
+    items:
+      - sitename: CSS-Inspiration
+        url: https://chokcoco.github.io/CSS-Inspiration/
+        img: /img/links/css-inspiration.png
+        desc: CSS 灵感                   
+
+      - sitename: You-need-to-know-css 
+        url: https://lhammer.cn/You-need-to-know-css/#/zh-cn/
+        img: /img/links/You-need-to-know-css.png
+        desc: Web开发者应该掌握的CSS tricks
 ---
