@@ -64,4 +64,9 @@ links:
         url: https://qishaoxuan.github.io/css_tricks/
         img: /img/links/css-tricks.png
         desc: 常用的 CSS 样式 | CSS 的新属性 | 一点CSS奇技淫巧
+
+      - sitename: Animista 
+        url: https://animista.net/
+        img: /img/links/animista.png
+        desc: CSS最佳生成器
 ---
