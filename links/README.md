@@ -7,7 +7,14 @@ links:
       - sitename: Vuetify
         url: https://vuetifyjs.com/zh-Hans/
         img: /img/links/vuetify.png
-        desc: Material样式的Vue UI组件
+        desc: Material 样式的 Vue UI组件
+      
+      - sitename: Element
+        url: https://element.eleme.cn/#/zh-CN
+        img: /img/links/element.svg
+        desc: 饿了么出品的 Vue 桌面端组件库 
+
+      
       - sitename: Oh, Vue Icons!
         url: https://oh-vue-icons.netlify.app
         img: /img/links/icon.svg
