@@ -1,10 +1,9 @@
 <template>
-    <iframe class="video-iframe" width="100%" v-resize="{ log: true }" frameborder="no" scrolling="no" seamless="" allowfullscreen="allowfullscreen" :src="src"></iframe>
+    <iframe class="video-iframe" width="100%" frameborder="no" scrolling="no" seamless="" allowfullscreen="allowfullscreen" :src="src"></iframe>
 </template>
 
 <script>
   export default {
-      name:"v-iframe",
       props: {
           src: {
               type: String

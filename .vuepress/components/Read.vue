@@ -53,7 +53,6 @@ import PageHeader from "@theme/components/PageHeader";
 
 
 export default {
-  name: "v-read",
   components: { Common, PageHeader },
 
   data() {
