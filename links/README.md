@@ -2,6 +2,13 @@
 layout: Links
 title: Links
 links:
+  - title: 正在学习
+    items:
+      - sitename: 杰哥的IT之旅【公众号】
+        url: https://mp.weixin.qq.com/s/uw23nawEDWhmnxBXTOTQDg
+        img: /img/links/JieGeIT.png
+        desc: 所有文章汇总（持续更新中...）
+
   - title: 组件库
     items:
       - sitename: Vuetify
