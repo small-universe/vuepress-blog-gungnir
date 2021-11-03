@@ -4,7 +4,7 @@
 
 <script>
   export default {
-      name:"VueIframe",
+      name:"v-iframe",
       props: {
           src: {
               type: String
