@@ -30,7 +30,7 @@ links:
       - sitename: Oh, Vue Icons!
         url: https://oh-vue-icons.netlify.app
         img: /img/links/icon.svg
-        desc: Vue 图标组件           
+        desc: Renovamen 写的 Vue 图标组件           
   
   - title: VuePress 主题
     items:
