@@ -34,4 +34,13 @@ categories:
         pdf: /files/books/代码整洁之道.pdf
         link:
         note:
+  
+  - category: 计算机基础
+    books:
+      - title: 漫画算法
+        author: 小灰
+        cover: /img/books/漫画算法.jpg
+        pdf: 
+        link: /posts/2021-11-05-漫画算法.md
+        note: 
 ---
