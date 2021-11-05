@@ -41,6 +41,6 @@ categories:
         author: 小灰
         cover: /img/books/漫画算法.jpg
         pdf: 
-        link: /posts/2021-11-05-漫画算法.md
-        note: 
+        link: https://github.com/bjweimengshu/ProgrammerXiaohui
+        note: /posts/2021-11-05-漫画算法.md
 ---
