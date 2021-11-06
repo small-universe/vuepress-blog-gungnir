@@ -14,6 +14,11 @@ links:
         img: /img/links/java-framework-source.png
         desc: 互联网公司常用框架源码赏析
 
+      - sitename: 设计模式
+        url: http://c.biancheng.net/
+        img: /img/links/c-language-site.png
+        desc: Java设计模式：23种设计模式全面解析（超级详细）
+
   - title: 组件库
     items:
       - sitename: Vuetify
