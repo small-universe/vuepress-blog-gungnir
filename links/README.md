@@ -19,6 +19,11 @@ links:
         img: /img/links/c-language-site.png
         desc: Java设计模式：23种设计模式全面解析（超级详细）
 
+      - sitename: Java 工程师成神之路
+        url: http://hollischuang.gitee.io/tobetopjavaer/#/
+        img: /img/links/to-be-top-javaer.png
+        desc: Hollis——阿里巴巴技术专家，总结的Java知识，该文案已收录在Alibaba Java 技术图谱
+
   - title: 组件库
     items:
       - sitename: Vuetify
