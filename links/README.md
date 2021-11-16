@@ -65,6 +65,11 @@ links:
         img: /img/links/yur.png
         desc: ⭐⭐⭐
 
+      - sitename: aurora
+        url: https://github.com/vuepress-aurora/vuepress-theme-aurora
+        img: 
+        desc: ⭐⭐⭐
+
   - title: 后端学习资料
     items:
       - sitename: IT Book
