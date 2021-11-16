@@ -64,7 +64,6 @@ links:
         url: https://github.com/cnguu/vuepress-theme-yur/
         img: /img/links/yur.png
         desc: ⭐⭐⭐
-
       - sitename: aurora
         url: https://github.com/vuepress-aurora/vuepress-theme-aurora
         img: 
