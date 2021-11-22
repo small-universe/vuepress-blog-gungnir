@@ -23,6 +23,11 @@ links:
         url: http://hollischuang.gitee.io/tobetopjavaer/#/
         img: /img/links/to-be-top-javaer.png
         desc: Alibaba Java 技术图谱学习文案之一
+      
+      - sitename: JavaGuid
+        url: https://javaguide.cn/
+        img: /img/links/java-guid.png
+        desc: Java学习&&面试指南
 
   - title: 组件库
     items:
