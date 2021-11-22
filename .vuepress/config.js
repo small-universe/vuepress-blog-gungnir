@@ -81,7 +81,7 @@ module.exports = {
     // 作者信息
     personalInfo: {
       name: "nanci",
-      avatar: "/img/avatar.jpg",
+      avatar: "/img/favicon.png",
       description: "",
       sns: {
         github: "small-universe",
