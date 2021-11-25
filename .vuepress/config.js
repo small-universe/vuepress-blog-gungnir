@@ -78,6 +78,9 @@ module.exports = {
         icon: "fa-satellite-dish"
       }
     ],
+    sidebar: [
+      
+    ],
     // 作者信息
     personalInfo: {
       name: "nanci",
