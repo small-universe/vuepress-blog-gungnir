@@ -35,7 +35,7 @@ tags:
 
 加载的时候：Class对象的由来是将class文件读入内存，并为之创建一个Class对象。
 
-![](https://gitee.com/small-universe/file-bed/raw/master/Java/2021-10-18-23:00:08-java-02.png)
+![](https://gitee.com/small-universe/file-bed/raw/master/Java/2021-10-18-23-00-08-java-02.png)
 
 了解[类加载机制与双亲委派模型](calssloader.md)
 

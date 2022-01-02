@@ -839,7 +839,7 @@ The common interface extended by all annotation types.
 
 ### 01 | Annotation 架构图
 
-<img src="https://gitee.com/small-universe/file-bed/raw/master/Java/2021-10-18-22:51:58-java-03.png" style="zoom:80%;" />
+<img src="https://gitee.com/small-universe/file-bed/raw/master/Java/2021-10-18-22-51-58-java-03.png" style="zoom:80%;" />
 
 从图看出：
 
